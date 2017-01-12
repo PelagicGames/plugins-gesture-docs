@@ -1,44 +1,30 @@
-__*[NOTE]:*__ See [Instructions](Instructions.markdown) for these stub documentation files. (Remove this before you deploy your docs)
-
-
-# PLUGIN_NAME: Plugin API Docs
+# gesture: Plugin API Docs
 
 |                      | &nbsp; 
 | -------------------- | ---------------------------------------------------------------
-| __Type__             | [TYPE](http://docs.coronalabs.com/api/type/Library.html)
-| __Corona Store__     | [PLUGIN_NAME](http://store.coronalabs.com/plugin/PLUGIN_NAME)
-| __Keywords__         | 
-| __See also__         | 
+| __Type__             | [Library](http://docs.coronalabs.com/api/type/Library.html)
+| __Corona Store__     | [gesture](http://store.coronalabs.com/plugin/gesture)
+| __Keywords__         | gesture, touch, event, listener
+| __See also__         | [Sample code](sample.lua)
 
 ## Overview
 
-The PLUGIN_NAME plugin can be used in your [Corona](https://coronalabs.com/products/corona-sdk/) project. It enables you to...
+The gesture plugin can be used in your [Corona](https://coronalabs.com/products/corona-sdk/) project. It enables you to enhance touch listeners on large objects, such as background images, to recognise gesture events, such as directional swipes.
 
 
 ## Syntax
 
-	local PLUGIN_NAME = require "plugin.PLUGIN_NAME"
+	local gesture = require "plugin.gesture"
 
 ### Functions
 
-##### [PLUGIN_NAME.loadTable()](loadTable.markdown)
+##### [gesture.setValidGestures()](setValidGestures.markdown)
 
-##### [PLUGIN_NAME.printTable()](printTable.markdown)
+##### [gesture.gestureListener()](gestureListener.markdown)
 
-##### [PLUGIN_NAME.saveTable()](saveTable.markdown)
+##### [gesture.getValidGestures()](getValidGestures.markdown)
 
-##### [PLUGIN_NAME.FUNCTION()](FUNCTION.markdown)
-
-
-### Properties
-
-##### [PLUGIN_NAME.PROPERTY](PROPERTY.markdown)
-
-## Project Configuration
-
-### Corona Store Activation
-
-In order to use this plugin, you must activate the plugin at the [Corona Store](http://store.coronalabs.com/plugin/PLUGIN_NAME).
+##### [gesture.getSupportedGestures()](getSupportedGestures.markdown)
 
 
 ### SDK
@@ -53,10 +39,10 @@ settings =
 	plugins =
 	{
 		-- key is the name passed to Lua's 'require()'
-		["plugin.PLUGIN_NAME"] =
+		["plugin.gesture"] =
 		{
 			-- required
-			publisherId = "REVERSE_PUBLISHER_URL",
+			publisherId = "com.pelagic-games",
 		},
 	},		
 }
@@ -64,42 +50,36 @@ settings =
 
 ### Enterprise
 
-If you have activated this plugin, you can download this plugin from the corresponding plugin page in the [Corona Store](http://store.coronalabs.com/plugin/PLUGIN_NAME).
-
-
-## Platform-specific Notes
-
-[Insert discussion on issues specific to iOS/Android/etc, or to specific devices]
+If you have activated this plugin, you can download this plugin from the corresponding plugin page in the [Corona Store](http://store.coronalabs.com/plugin/gesture).
 
 
 ## Resources
 
 ### Sample Code
 
-You can access sample code [here](SAMPLE_CODE_URL).
+You can access sample code [here](sample.lua).
 
 ### Support
 
-More support is available from the PUBLISHER_NAME team:
+More support is available from the Pelagic Games team:
 
-* [E-mail](mailto://PUBLISHER_CONTACT@PUBLISHER_URL)
-* [Forum](http://FORUM_URL)
-* [Plugin Publisher](http://PUBLISHER_URL)
+* [E-mail](mailto://support@pelagic-games)
+* [Plugin Publisher](http://www.pelagic-games.com)
 
 
 ## Compatibility
 
 | Platform                     | Supported
 | ---------------------------- | ---------------------------- 
-| iOS                          | No
-| Android                      | No
-| Android (GameStick)          | No
-| Android (Kindle)             | No
-| Android (NOOK)               | No
-| Android (Ouya)               | No
-| Mac App                      | No
-| Win32 App                    | No
-| Windows Phone 8              | No
-| Corona Simulator (Mac)       | No
-| Corona Simulator (Win)       | No
+| iOS                          | Yes
+| Android                      | Yes
+| Android (GameStick)          | Yes
+| Android (Kindle)             | Yes
+| Android (NOOK)               | Yes
+| Android (Ouya)               | Yes
+| Mac App                      | Yes
+| Win32 App                    | Yes
+| Windows Phone 8              | Yes
+| Corona Simulator (Mac)       | Yes
+| Corona Simulator (Win)       | Yes
 

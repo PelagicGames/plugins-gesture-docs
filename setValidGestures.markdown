@@ -5,7 +5,7 @@
 | __Type__             | [function](http://docs.coronalabs.com/api/type/Function.html)
 | __Library__          | [simple_gesture.*](Readme.markdown)
 | __Return value__     | nil
-| __Keywords__         | gesture, valid
+| __Keywords__         | simple, gesture, valid
 | __See also__         | [Sample code](sample.lua), [simple_gesture.getValidGestures()](getValidGestures.markdown), [simple_gesture.getSupportedGestures()](getSupportedGestures.markdown), [simple_gesture.gestureListener()](gestureListener.markdown)
 
 

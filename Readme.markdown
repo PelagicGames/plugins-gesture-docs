@@ -1,30 +1,30 @@
-# gesture: Plugin API Docs
+# simple_gesture: Plugin API Docs
 
 |                      | &nbsp; 
 | -------------------- | ---------------------------------------------------------------
 | __Type__             | [Library](http://docs.coronalabs.com/api/type/Library.html)
-| __Corona Store__     | [gesture](http://store.coronalabs.com/plugin/gesture)
-| __Keywords__         | gesture, touch, event, listener
+| __Corona Store__     | [simple_gesture](http://store.coronalabs.com/plugin/simple_gesture)
+| __Keywords__         | simple, gesture, touch, event, listener
 | __See also__         | [Sample code](sample.lua)
 
 ## Overview
 
-The gesture plugin can be used in your [Corona](https://coronalabs.com/products/corona-sdk/) project. It enables you to enhance touch listeners on large objects, such as background images, to recognise gesture events, such as directional swipes.
+The simple gesture plugin can be used in your [Corona](https://coronalabs.com/products/corona-sdk/) project. It enables you to enhance touch listeners on large objects, such as background images, to recognise simple gesture events, such as directional swipes.
 
 
 ## Syntax
 
-	local gesture = require "plugin.gesture"
+	local simple_gesture = require "plugin.simple_gesture"
 
 ### Functions
 
-##### [gesture.setValidGestures()](setValidGestures.markdown)
+##### [simple_gesture.setValidGestures()](setValidGestures.markdown)
 
-##### [gesture.gestureListener()](gestureListener.markdown)
+##### [simple_gesture.gestureListener()](gestureListener.markdown)
 
-##### [gesture.getValidGestures()](getValidGestures.markdown)
+##### [simple_gesture.getValidGestures()](getValidGestures.markdown)
 
-##### [gesture.getSupportedGestures()](getSupportedGestures.markdown)
+##### [simple_gesture.getSupportedGestures()](getSupportedGestures.markdown)
 
 
 ### SDK
@@ -39,7 +39,7 @@ settings =
 	plugins =
 	{
 		-- key is the name passed to Lua's 'require()'
-		["plugin.gesture"] =
+		["plugin.simple_gesture"] =
 		{
 			-- required
 			publisherId = "com.pelagic-games",
@@ -50,7 +50,7 @@ settings =
 
 ### Enterprise
 
-If you have activated this plugin, you can download this plugin from the corresponding plugin page in the [Corona Store](http://store.coronalabs.com/plugin/gesture).
+If you have activated this plugin, you can download this plugin from the corresponding plugin page in the [Corona Store](http://store.coronalabs.com/plugin/simple_gesture).
 
 
 ## Resources

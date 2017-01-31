@@ -1,5 +1,5 @@
 -- 
--- Abstract: gesture Library Plugin Test Project
+-- Abstract: simple_gesture Library Plugin Test Project
 -- 
 -- Sample code is MIT licensed, see http://www.coronalabs.com/links/code/license
 -- Copyright (C) 2015 Corona Labs Inc. All Rights Reserved.
@@ -7,7 +7,7 @@
 ------------------------------------------------------------
 
 -- Load plugin library
-local gesture = require "plugin.gesture"
+local simple_gesture = require "plugin.simple_gesture"
 
 -------------------------------------------------------------------------------
 -- BEGIN (Insert your sample test starting here)
@@ -24,15 +24,15 @@ local gestureLabel = display.newText("No gesture", 0.5 * screenW, 0.1 * screenH,
 
 -- Print the supported gestures
 print("Supported gestures: ")
-local supportedGestures = gesture.getSupportedGestures()
+local supportedGestures = simple_gesture.getSupportedGestures()
 for index=1,#supportedGestures do
 	print("  " .. supportedGestures[index])
 end
 
 -- Set the valid gestures to just up, down, left and right
-gesture.setValidGestures({"up", "down", "left", "right", "poo"})
+simple_gesture.setValidGestures({"up", "down", "left", "right", "poo"})
 print("Valid gestures: ")
-local validGestures = gesture.getValidGestures()
+local validGestures = simple_gesture.getValidGestures()
 for index=1,#validGestures do
 	print("  " .. validGestures[index])
 end
@@ -40,7 +40,7 @@ end
 -- Add a touch listener that calls into the gesture library
 function background:touch(event)
 	-- Pass the event directly to the gestureListener function before doing anything else or applying any logic
-	local gestureResult = gesture.gestureListener(event)
+	local gestureResult = simple_gesture.gestureListener(event)
 
 	-- gestureResult will be nil during a gesture, false if the gesture has ended and not been recognised, and a string value if a valid gesture was recorded
 	if (gestureResult) then
